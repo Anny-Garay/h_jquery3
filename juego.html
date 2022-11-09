@@ -1,0 +1,23 @@
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<link rel="stylesheet" href="estilos.css">
+
+<img id="personaje" src="https://www.programacionfacil.org/images/cursos/pygame/idle1.png" alt="">
+<script>
+  let espacio2 = 0;
+  let espacio3 = 1700;
+    $('body').keyup(function(e){
+        if(e.key=='ArrowRight'){
+            espacio2 = espacio2 + 20;
+            $('#personaje').css('margin-left', espacio2);
+        }else if(e.key=='ArrowLeft'){
+            espacio2 = espacio2 - 20;
+            $('#personaje').css('margin-left', espacio2);
+        }else if(e.key=='ArrowUp'){
+            espacio3 = espacio3 - 50;
+            $('#personaje').css('margin-top', espacio3);
+        }else if(e.key=='ArrowDown'){
+            espacio3 = espacio3 + 20;
+            $('#personaje').css('margin-top', espacio3);
+        }
+    })   
+</script>

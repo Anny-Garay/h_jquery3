@@ -1,0 +1,18 @@
+.caja1, .caja2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(182, 21, 21);
+}
+.caja2{
+    background-color: rgb(6, 49, 129);
+}
+body{
+    background-image: url(https://img.freepik.com/vector-premium/bosque-2d-juego_54887-14.jpg?w=2000);
+    background-size: cover;
+    background-position: center ;
+}
+#personaje{
+    width: 200px;
+    height: 200px;
+    margin-top: 1700px;
+}

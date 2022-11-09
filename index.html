@@ -1,0 +1,23 @@
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<link rel="stylesheet" href="estilos.css">
+
+
+<div class="caja1"></div>
+<div class="caja2"></div>
+<button id="derecha">Derecha</button>
+<script>
+    let espacio = 0;
+
+    $('#derecha').click(function(){
+        espacio = espacio + 10
+        $('.caja1').css('margin-left', espacio);
+    })
+
+    let espacio2 = 0;
+    $('body').keyup(function(e){
+        if(e.key=' '){
+            espacio2 = espacio2 + 10;
+            $('.caja2').css('margin-left', espacio2);
+        }
+    })
+    </script>
